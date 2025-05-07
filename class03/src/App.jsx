@@ -11,10 +11,14 @@ import MilhasParaQuilometros from './components/MilhasParaQuilometros'
 import ListaDeLivros from './components/ListaDeLivros'
 import RenderizandoComFuncoes from './components/RenderizandoComFuncoes'
 import Mensagem from './components/Mensagem'
+import TrabalhandoComImagens from './components/TrabalhandoComImagens'
+import TrabalhandoComImagensCondicionais from './components/TrabalhandoComImagensCondicionais'
 
 const App = () => {
   return (
     <div>
+      <TrabalhandoComImagensCondicionais tipo={"ASSET"} />
+      <TrabalhandoComImagens />
       <h1>Mensagens</h1>
       <Mensagem tipo={"sucesso"} />
       <Mensagem tipo={"erro"} />
