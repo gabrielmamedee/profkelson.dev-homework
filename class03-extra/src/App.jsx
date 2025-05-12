@@ -16,8 +16,14 @@ import SegundosParaHoras from './components/SegundosParaHoras'
 import SegundosParaMinutos from './components/SegundosParaMinutos'
 import SomaComEstilo from './components/SomaComEstilo'
 import SubtraiComEstilo from './components/SubtraiComEstilo'
+import ImagemCondicional2 from './components/ImagemCondicional2'
+import ListaDeFrutas from './components/ListaDeFrutas'
+import ContatoUsuario from './components/ContatoUsuario'
 
 function App() {
+
+  const frutas = ["maçã", "banana", "laranja", "uva", "abacaxi"];
+
   return (
     <>
       {/*1. Operações Aritméticas com Estilo*/}
@@ -54,7 +60,13 @@ function App() {
       <GaleriaImagens img1={"m1.jpeg"} img2={"m2.jpeg"} img3={"m3.jpeg"} />
       <br />
       {/*10. Imagem Alternativa*/}
-      
+      <ImagemCondicional2 tipoImagem={"PERSONAGEM"} />
+      <br />
+      {/*11. Renderização de Frutas*/}
+      <ListaDeFrutas frutas={frutas} />
+      <br />
+      {/*12. Contato de Usuário*/}
+      <ContatoUsuario nome={"Gabriel"} email={"gabriel@gmail.com"} telefone={"(83) 99999-9999"} />
     </>
   )
 }
