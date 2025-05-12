@@ -19,10 +19,24 @@ import SubtraiComEstilo from './components/SubtraiComEstilo'
 import ImagemCondicional2 from './components/ImagemCondicional2'
 import ListaDeFrutas from './components/ListaDeFrutas'
 import ContatoUsuario from './components/ContatoUsuario'
+import Produto from './components/Produto'
+import ListaProdutos from './components/ListaProdutos'
+import MensagemNota from './components/MensagemNota'
+import CorFavorita from './components/CorFavorita'
+import SaudacaoHorario from './components/SaudacaoHorario'
+import StatusConexao from './components/StatusConexao'
+import NomeCompleto from './components/NomeCompleto'
+import MensagemEmoji from './components/MensagemEmoji'
 
 function App() {
 
   const frutas = ["maçã", "banana", "laranja", "uva", "abacaxi"];
+
+  const listaDeProdutos = [
+    { nome: "Camiseta", preco: "49.90", categoria: "Roupas" },
+    { nome: "Notebook", preco: "3499.00", categoria: "Eletrônicos" },
+    { nome: "Café", preco: "15.00", categoria: "Alimentos" }
+  ];
 
   return (
     <>
@@ -67,6 +81,30 @@ function App() {
       <br />
       {/*12. Contato de Usuário*/}
       <ContatoUsuario nome={"Gabriel"} email={"gabriel@gmail.com"} telefone={"(83) 99999-9999"} />
+      <br />
+      {/*13. Produto na Vitrine*/}
+      <Produto nome={"TV Samsung"} preco={"R$ 2.999,00"} categoria={"Eletronico"}/>
+      <br />
+      {/*14. Lista de Produtos*/}
+      <ListaProdutos listaDeProdutos={listaDeProdutos}/>
+      <br />
+      {/*15. Renderização com Nota*/}
+      <MensagemNota nota={6.0} />
+      <br />
+      {/*16. Cores Preferidas*/}
+      <CorFavorita cor={"red"} />
+      <br />
+      {/*17. Saudação com Horário*/}
+      <SaudacaoHorario hora={7} />
+      <br />
+      {/*18. Status de Conexão*/}
+      <StatusConexao online={true} />
+      <br />
+      {/*19. Componente Nome Completo*/}
+      <NomeCompleto nome={"Gabriel"} sobrenome={"Mamede"} />
+      <br />
+      {/*20. Mensagem com Emoji*/}
+      <MensagemEmoji mensagem={"Estou animado"} emoji={"😄"} />
     </>
   )
 }
