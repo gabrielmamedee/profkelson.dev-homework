@@ -1,8 +1,15 @@
 import './App.css'
+import AnimalFavorito from './components/AnimalFavorito'
+import DesejoDoDia from './components/DesejoDoDia'
 import DivideComEstilo from './components/DivideComEstilo'
 import EstudoHoje from './components/EstudoHoje'
-import FilmeDetalhado from './components/FilmeDetalhado'
+import GaleriaImagens from './components/GaleriaImagens'
+import Ny1 from './assets/ny1.jpg'
+import Ny2 from './assets/ny2.jpg'
+import Ny3 from './assets/ny3.jpg'
 import HorasParaSegundos from './components/HorasParaSegundos'
+import ListaDeFilmesDetalhados from './components/ListaDeFilmesDetalhados'
+import MensagemClima from './components/MensagemClima'
 import MinutosParaSegundos from './components/MinutosParaSegundos'
 import MultiplicaComEstilo from './components/MultiplicaComEstilo'
 import SegundosParaHoras from './components/SegundosParaHoras'
@@ -27,7 +34,26 @@ function App() {
       <MinutosParaSegundos minutos={1} />
       <HorasParaSegundos horas={1} />
       <SegundosParaHoras segundos={3600} />
+      <br />
       {/*4. Lista de Filmes com Gênero*/}
+      <ListaDeFilmesDetalhados />
+      <br />
+      {/*5. Mensagem de Clima*/}
+      <MensagemClima tipoClima={"sol"}/>
+      <br />
+      {/*6. Desejo do Dia*/}
+      <DesejoDoDia mensagem={"Fazer Churrasco"}/>
+      <br />
+      {/*7. Renderizar Animal Favorito*/}
+      <AnimalFavorito animal={"cachorro"} />
+      <br />
+      {/*8. Galeria de Imagens*/}
+      <GaleriaImagens img1={Ny1} img2={Ny2} img3={Ny3} />
+      <br />
+      {/*9. Galeria Pública*/}
+      <GaleriaImagens img1={"m1.jpeg"} img2={"m2.jpeg"} img3={"m3.jpeg"} />
+      <br />
+      {/*10. Imagem Alternativa*/}
       
     </>
   )
