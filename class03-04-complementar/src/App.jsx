@@ -1,14 +1,26 @@
 import './App.css'
+import CentimetroParaMetro from './components/CentimetroParaMetro'
+import ContadorDeCliques from './components/ContadorDeCliques'
 import Destino from './components/Destino'
+import DiaDaSemana from './components/DiaDaSemana'
 import Dobro from './components/Dobro'
+import DolarParaReal from './components/DolarParaReal'
 import Filme from './components/Filme'
 import ListaDeFilmes from './components/ListaDeFilmes'
 import MensagemClima from './components/MensagemClima'
 import Metade from './components/Metade'
+import MetroParaCentimetro from './components/MetroParaCentimetro'
 import OlaUsuario from './components/OlaUsuario'
 import Potenciacao from './components/Potenciacao'
 import RaizQuadrada from './components/RaizQuadrada'
+import RealParaDolar from './components/RealParaDolar'
+import SorteadorDeDados from './components/SorteadorDeDados'
+import SorteadorDeNumeros from './components/SorteadorDeNumeros'
 import StatusPedido from './components/StatusPedido'
+import StyleGlobal from './components/StyleGlobal'
+import StyleInline from './components/StyleInline'
+import StyleInlineDinamico from './components/StyleInlineDinamico'
+import TemperaturaEstacao from './components/TemperaturaEstacao'
 
 function App() {
 
@@ -36,6 +48,28 @@ function App() {
       <Destino pais={"BR"} />
       <Destino pais={""} />
       <StatusPedido statusDoPedido={"enviado"} />
+
+      {/*Conversores*/}
+      <CentimetroParaMetro centimetros={100} />
+      <MetroParaCentimetro metros={1} />
+      <DolarParaReal valor={1} />
+      <RealParaDolar valor={5} />
+
+      {/*CSS Global*/}
+      <StyleGlobal />
+
+      {/*CSS Inline e Inline Dinâmico*/}
+      <StyleInline />
+      <StyleInlineDinamico ativo={true} />
+
+      {/*CSS Module*/}
+      <DiaDaSemana  dia={'Domingo'} />
+      <TemperaturaEstacao estacao={'Inverno'} />
+
+      {/*Hooks - useState*/}
+      <ContadorDeCliques />
+      <SorteadorDeNumeros />
+      <SorteadorDeDados />
     </>
   )
 }
