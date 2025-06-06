@@ -6,11 +6,14 @@ import DiaDaSemana from './components/DiaDaSemana'
 import Dobro from './components/Dobro'
 import DolarParaReal from './components/DolarParaReal'
 import Filme from './components/Filme'
+import FormularioDeFeedback from './components/FormularioDeFeedback'
+import FormularioDeLogin from './components/FormularioDeLogin'
 import ListaDeFilmes from './components/ListaDeFilmes'
 import MensagemClima from './components/MensagemClima'
 import Metade from './components/Metade'
 import MetroParaCentimetro from './components/MetroParaCentimetro'
 import OlaUsuario from './components/OlaUsuario'
+import PostarComentario from './components/PostarComentario'
 import Potenciacao from './components/Potenciacao'
 import RaizQuadrada from './components/RaizQuadrada'
 import RealParaDolar from './components/RealParaDolar'
@@ -70,6 +73,11 @@ function App() {
       <ContadorDeCliques />
       <SorteadorDeNumeros />
       <SorteadorDeDados />
+
+      {/*Formulários*/}
+      <FormularioDeFeedback/>
+      <FormularioDeLogin />
+      <PostarComentario />
     </>
   )
 }
